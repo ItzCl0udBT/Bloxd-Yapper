@@ -3,6 +3,9 @@ HOW TO MAKE A RNG CODE
 let name = api.getEntityName(myId);
 let roll = Math.floor(Math.random() * 100) + 1;
 
+let name = api.getEntityName(myId);
+let roll = Math.floor(Math.random() * 100) + 1;
+
 let blocks = [
     { block: "Red Carpet",   "custom Display Name": "Warrior Card",          "custom Description": "Balanced melee fighter. (Common)", color: "red" },
     { block: "Blue Carpet",  "custom Display Name": "Archer Card",           "custom Description": "Long-range expert. (Common)", color: "blue" },
@@ -17,16 +20,16 @@ let blocks = [
 ];
 
 let chances = [
-    { min: 1,  max: 9 },
-    { min: 10, max: 18 },
-    { min: 19, max: 26 },
-    { min: 27, max: 38 },
-    { min: 39, max: 53 },
-    { min: 54, max: 63 },
-    { min: 64, max: 72 },
-    { min: 73, max: 81 },
-    { min: 82, max: 90 },
-    { min: 91, max: 100 },
+    { min: 1,  max: 9 },    // Warrior (9%)
+    { min: 10, max: 18 },   // Archer (9%)
+    { min: 19, max: 26 },   // Scout (8%)
+    { min: 27, max: 38 },   // Assassin (12%)
+    { min: 39, max: 53 },   // Tank (15%)
+    { min: 54, max: 63 },   // Healer (10%)
+    { min: 64, max: 72 },   // Mage (9%)
+    { min: 73, max: 81 },   // Necromancer (9%)
+    { min: 82, max: 90 },   // Paladin (10%)
+    { min: 91, max: 100 },  // Rising Dead (5%)
 ];
 
 for (let i = 0; i < chances.length; i++) {
